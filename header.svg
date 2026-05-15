@@ -1,0 +1,94 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040000"/>
+      <stop offset="100%" stop-color="#130000"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b0000"/>
+      <stop offset="50%" stop-color="#C0392B"/>
+      <stop offset="100%" stop-color="#7B1818"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3d0000"/>
+      <stop offset="50%" stop-color="#7B0000"/>
+      <stop offset="100%" stop-color="#4a0000"/>
+    </linearGradient>
+    <linearGradient id="sideglow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C0392B" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C0392B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C0392B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="900" height="200" fill="url(#dark)"/>
+
+  <!-- Red wave layers (static hand-crafted paths — always renders) -->
+  <path d="M0,175 Q90,148 200,162 Q320,178 450,148 Q570,118 700,152 Q800,175 900,155 L900,200 L0,200 Z"
+        fill="url(#wave2)"/>
+  <path d="M0,185 Q110,165 260,178 Q400,190 520,165 Q650,140 780,168 Q860,182 900,170 L900,200 L0,200 Z"
+        fill="url(#wave1)" opacity="0.85"/>
+
+  <!-- Horizontal glow line (accent) -->
+  <rect x="0" y="157" width="900" height="1" fill="url(#sideglow)"/>
+
+  <!-- Left red bar -->
+  <rect x="0" y="0" width="6" height="157" fill="#C0392B"/>
+
+  <!-- Top thin line -->
+  <rect x="6" y="0" width="894" height="2" fill="#C0392B" opacity="0.7"/>
+
+  <!-- Corner brackets top-right -->
+  <g fill="none" stroke="#C0392B" stroke-width="2.5" stroke-linecap="square" opacity="0.85">
+    <polyline points="842,12 878,12 878,46"/>
+    <polyline points="842,148 878,148 878,114"/>
+  </g>
+
+  <!-- Faint grid (just a few lines for texture) -->
+  <g stroke="#5c0000" stroke-opacity="0.2" stroke-width="0.5">
+    <line x1="6"   y1="50"  x2="836" y2="50"/>
+    <line x1="6"   y1="100" x2="836" y2="100"/>
+    <line x1="200" y1="0"   x2="200" y2="157"/>
+    <line x1="450" y1="0"   x2="450" y2="157"/>
+    <line x1="700" y1="0"   x2="700" y2="157"/>
+  </g>
+
+  <!-- System tag top-left -->
+  <text x="18" y="14"
+    font-family="monospace, 'Courier New'"
+    font-size="9" fill="#C0392B" opacity="0.65" letter-spacing="2">
+    SYS :: KR_DEV
+  </text>
+
+  <!-- KIRUKATA — huge main text -->
+  <text x="455" y="90"
+    text-anchor="middle"
+    font-family="sans-serif"
+    font-size="72" font-weight="900"
+    fill="#FFFFFF"
+    letter-spacing="16">
+    KIRUKATA
+  </text>
+
+  <!-- Thin red divider line -->
+  <rect x="160" y="100" width="590" height="2" fill="#C0392B"/>
+
+  <!-- RYUZAKI — smaller, spaced, crimson -->
+  <text x="455" y="132"
+    text-anchor="middle"
+    font-family="monospace, 'Courier New'"
+    font-size="22" font-weight="700"
+    fill="#C0392B"
+    letter-spacing="34">
+    RYUZAKI
+  </text>
+
+  <!-- Role text -->
+  <text x="455" y="152"
+    text-anchor="middle"
+    font-family="monospace, 'Courier New'"
+    font-size="10" fill="#8B3030" letter-spacing="8">
+    MOBILE &amp; WEB DEVELOPER
+  </text>
+</svg>
